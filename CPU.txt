@@ -20,5 +20,6 @@ Links:
          3. Store previous output
         All instructions are provided in 4-bit opcodes and 8-bit operands. The LAF Delta (LAFD) uses a hierarchical opcode
         pipeline, meaning each component of the CPU has a set of opcodes in addition to the primary set. This allows for
-        expanded opcode tables and parameters without overhauling the entire ISA. The subset of opcodes may contain many of the
-        same opcodes as the parent ISA to allow for transparent communication between components.
+        expanded opcode tables and parameters without overhauling the entire ISA. The subset of opcodes (soOpcodes) may contain
+        many of the same opcodes as the parent ISA (pISA) to allow for transparent communication between components. As
+        development continues, a passthrough opcode (pOpcode) to transmit a specific command to a component may be implemented.
