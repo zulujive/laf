@@ -1,0 +1,20 @@
+#LAF Architecture (Delta)
+-----------------------------------
+
+Links:
+	ALU: https://simulator.io/board/NDs7VqfFSE/1
+
+
+=========Opcode Table=========
+	1. 0000 == Operand #2 is read back
+	2. 0001 == Add Operands #1 and #2
+	3. 0010 == Store previous output in memory address Operand #1 (5 bit heap)
+
+=========Information and Explanation=========
+    The LAF Architecture Delta is a instruction set architecture (ISA) and open-source CPU architecture. The CPU is designed in 4 bit architecture (Delta) and hopefully will be available in 16 bit architecture (Gamma).
+    Instruction Set Architecture
+        The LAF Delta ISA currently consists of 3 operations:
+         1. Read back
+         2. Addition (with carry)
+         3. Store previous output
+        All instructions are provided in 4-bit opcodes and 8-bit operands. The LAF Delta (LAFD) uses a hierarchical opcode pipeline, meaning each component of the CPU has a set of opcodes in addition to the primary set. This allows for expanded opcode tables and parameters. 
