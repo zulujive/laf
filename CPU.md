@@ -1,4 +1,4 @@
-LAF Architecture
+#LAF Architecture
 -----------------------------------
 
 Links:
